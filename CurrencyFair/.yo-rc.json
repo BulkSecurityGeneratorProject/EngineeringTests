@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "baseName": "CurrencyFairTest",
+    "packageName": "com.currencyfair.engineering.test",
+    "packageFolder": "com/currencyfair/engineering/test",
+    "authenticationType": "cookie",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "7"
+  }
+}
