@@ -1,0 +1,68 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "userId",
+            "fieldType": "String",
+            "fieldNameCapitalized": "UserId",
+            "fieldNameUnderscored": "user_id"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "currencyFrom",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CurrencyFrom",
+            "fieldNameUnderscored": "currency_from"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "currencyTo",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CurrencyTo",
+            "fieldNameUnderscored": "currency_to"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "amountSell",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "AmountSell",
+            "fieldNameUnderscored": "amount_sell"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "amountBuy",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "AmountBuy",
+            "fieldNameUnderscored": "amount_buy"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "rate",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Rate",
+            "fieldNameUnderscored": "rate"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "timePlaced",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "TimePlaced",
+            "fieldNameUnderscored": "time_placed"
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "originatingCountry",
+            "fieldType": "String",
+            "fieldNameCapitalized": "OriginatingCountry",
+            "fieldNameUnderscored": "originating_country"
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": true,
+    "changelogDate": "20150302122242"
+}

@@ -1,0 +1,25 @@
+{
+    "currencyfairtestApp": {
+        "trade" : {
+            "home": {
+                "title": "Trades",
+                "createLabel": "Create a new Trade",
+                "createOrEditLabel": "Create or edit a Trade"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Trade {{ id }}?"
+            },
+            "detail": {
+                "title": "Trade"
+            },
+            "userId": "UserId",
+            "currencyFrom": "CurrencyFrom",
+            "currencyTo": "CurrencyTo",
+            "amountSell": "AmountSell",
+            "amountBuy": "AmountBuy",
+            "rate": "Rate",
+            "timePlaced": "TimePlaced",
+            "originatingCountry": "OriginatingCountry"
+        }
+    }
+}

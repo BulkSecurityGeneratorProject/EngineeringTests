@@ -1,0 +1,86 @@
+
+<div>
+    <h2><span translate="currencyfairtestApp.trade.detail.title">Trade</span> {{trade.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="currencyfairtestApp.trade.userId">UserId</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{trade.userId}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="currencyfairtestApp.trade.currencyFrom">CurrencyFrom</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{trade.currencyFrom}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="currencyfairtestApp.trade.currencyTo">CurrencyTo</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{trade.currencyTo}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="currencyfairtestApp.trade.amountSell">AmountSell</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{trade.amountSell}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="currencyfairtestApp.trade.amountBuy">AmountBuy</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{trade.amountBuy}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="currencyfairtestApp.trade.rate">Rate</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{trade.rate}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="currencyfairtestApp.trade.timePlaced">TimePlaced</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{trade.timePlaced}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="currencyfairtestApp.trade.originatingCountry">OriginatingCountry</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{trade.originatingCountry}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="trade"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

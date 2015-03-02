@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Trade.
+    -->
+    <changeSet id="20150302122242" author="jhipster">
+        <createTable tableName="T_TRADE">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="varchar(255)"/>
+            <column name="currency_from" type="varchar(255)"/>
+            <column name="currency_to" type="varchar(255)"/>
+            <column name="amount_sell" type="decimal(10,2)"/>
+            <column name="amount_buy" type="decimal(10,2)"/>
+            <column name="rate" type="decimal(10,2)"/>
+            <column name="time_placed" type="timestamp">
+                <constraints nullable="false" />
+            </column>
+            <column name="originating_country" type="varchar(255)"/>
+        </createTable>
+        <dropDefaultValue tableName="T_TRADE" columnName="time_placed" columnDataType="datetime"/>
+
+        
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,26 @@
+{
+    "currencyfairtestApp": {
+        "trade" : {
+            "home": {
+                "title": "Trades",
+                "createLabel": "Créer un nouveau Trade",
+                "createOrEditLabel": "Créer ou éditer un Trade"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Trade {{ id }} ?"
+            },
+            "detail": {
+                "title": "Trade"
+            },
+            "userId": "UserId",
+            "currencyFrom": "CurrencyFrom",
+            "currencyTo": "CurrencyTo",
+            "amountSell": "AmountSell",
+            "amountBuy": "AmountBuy",
+            "rate": "Rate",
+            "timePlaced": "TimePlaced",
+            "originatingCountry": "OriginatingCountry"
+        }
+    }
+}
+
