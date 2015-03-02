@@ -13,10 +13,18 @@ public class CurrencyFairRouter extends RouteBuilder
     @Override
     public void configure () throws Exception
     {
-	from("direct:trade")
+	from("seda:trade")
 	.marshal()
 	.json(JsonLibrary.Jackson, TradeDTO.class)
 	.to("file:data/trade")
+	;
+	
+	from("file:data/trade?idempotent=true&delete=true")
+	//.errorHandler(deadLetterChannel("file:data/trade/error"))
+	.unmarshal()
+	.json(JsonLibrary.Jackson , TradeDTO.class)
+	.multicast()
+	.to("persistantTradeProcessor","analyseTradeProcessor")	
 	;
 	
 	

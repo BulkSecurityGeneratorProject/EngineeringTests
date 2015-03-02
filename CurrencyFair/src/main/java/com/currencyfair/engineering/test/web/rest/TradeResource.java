@@ -48,7 +48,7 @@ public class TradeResource {
     public void create(@RequestBody TradeDTO tradeDTO) {
         log.debug("REST request to save Trade : {}", tradeDTO);
         //tradeRepository.save(trade);
-        producerTemplate.sendBody("direct:trade", tradeDTO);
+        producerTemplate.sendBody("seda:trade", tradeDTO);
     }
 
     /**
