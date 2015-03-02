@@ -56,6 +56,8 @@ public class WebsocketConfiguration extends AbstractWebSocketMessageBrokerConfig
             .withSockJS()
             .setInterceptors(httpSessionHandshakeInterceptor());
         registry.addEndpoint("/websocket/tracker").withSockJS();
+        
+        registry.addEndpoint("/websocket/currencypair").withSockJS();
     }
 
     @Bean
