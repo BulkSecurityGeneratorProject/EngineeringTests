@@ -20,7 +20,7 @@ or deploy the war file in a tomcat server.
 Process messages received via the message consumption endpoint.<br>
 The interface is <b>com.currencyfair.engineering.test.camel.service.TradeProcessor</b>.
 
-Implementaions are under the package com.currencyfair.engineering.test.camel.service.impl.<br>
+Implementaions are under the package <b>com.currencyfair.engineering.test.camel.service.impl</b>.<br>
 PersistantTradeProcessorImpl -> persists the Trade message in database.<br>
 AnalyseTradeProcessorImpl -> sends a CurrencyPairDTO to front end via websocket. <br>
 RealTimeTradeProcessorImpl -> sends the Trade Message to front end via websocket.<br>
