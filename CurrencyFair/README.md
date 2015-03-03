@@ -6,6 +6,7 @@ To run the application in prod mode, <br>
 mvn -Pprod package<br>
 cd target/<br>
 <b>java -jar jhipster-0.0.1-SNAPSHOT.war --spring.profiles.active=prod</b> <br>
+caution: the prod profile needs a postgres database. And not tested. <br>
 or deploy the war file in a tomcat server. 
 
 # Feature List
@@ -27,7 +28,7 @@ RealTimeTradeProcessorImpl -> sends the Trade Message to front end via websocket
 To add more processor, simple implement the TradeProcessor interface, and add the service name in com.currencyfair.engineering.test.camel.CurrencyFairRouter in appropriate position. (currrent line number 27).
 
 ## Message Frontend
-Developed with AngularJS and HTML5. 
+Developed with AngularJS and HTML5. Login with <b>admin/admin</b> and go to Administration->Currency Pair Tracking (for viewing Real Time Currency Pair Volumes) or Administration->Real Time Trade (for viewing Real Time Trades).
 
 ## Security
 The web application is fully secured. The end point for Message Consumption is open for all to submit a post request. Assuming that, some real application will post data to the endpoint, VPN tunnel is an option to secure this end point.
