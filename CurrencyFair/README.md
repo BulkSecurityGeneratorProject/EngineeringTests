@@ -1,5 +1,7 @@
 README for CurrencyFairTest
 ==========================
+# How to run 
+To run the application in dev mode with embedded tomcat server, simply type <b>mvn spring-boot:run</b>
 
 # Feature List
 ## Message Consumption
