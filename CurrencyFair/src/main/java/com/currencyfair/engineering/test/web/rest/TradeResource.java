@@ -7,6 +7,7 @@ import com.currencyfair.engineering.test.web.rest.dto.TradeDTO;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.ProducerTemplate;
+import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,9 +34,6 @@ public class TradeResource {
     private TradeRepository tradeRepository;
     
     @Autowired
-    CamelContext camelContext;
-    
-    @Autowired
     private ProducerTemplate producerTemplate;
 
     /**
@@ -47,7 +45,17 @@ public class TradeResource {
     @Timed
     public void create(@RequestBody TradeDTO tradeDTO) {
         log.debug("REST request to save Trade : {}", tradeDTO);
-        //tradeRepository.save(trade);
+        /*Trade trade = new Trade();
+        trade.setAmountBuy(tradeDTO.getAmountBuy());
+        trade.setAmountSell(tradeDTO.getAmountSell());
+        trade.setCurrencyFrom(tradeDTO.getCurrencyFrom());
+        trade.setCurrencyTo(tradeDTO.getCurrencyTo());
+        trade.setOriginatingCountry(tradeDTO.getOriginatingCountry());
+        trade.setRate(tradeDTO.getRate());
+        trade.setUserId(tradeDTO.getUserId());
+        trade.setTimePlaced(new DateTime()); // Fix It, shouldn't be new DateTime()
+        
+        tradeRepository.save(trade);*/
         producerTemplate.sendBody("seda:trade", tradeDTO);
     }
 
