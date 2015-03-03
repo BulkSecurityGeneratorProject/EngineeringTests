@@ -7,13 +7,15 @@
                 <tr>
                     <th>Currency Pair</th>
                     <th>Volume</th>
+                    <th>Number of Trades</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="currencyPair in currencyPairs">
                     <td>{{currencyPair.pairName}}</td>
-                    <td>{{currencyPair.transactionVolume}}</td>               
+                    <td>{{currencyPair.transactionVolume}}</td>
+                    <td>{{currencyPair.count}}</td>
                 </tr>
             </tbody>
         </table>

@@ -36,11 +36,13 @@ angular.module('currencyfairtestApp')
         	var currencyPair = getCurrencyPair(data.pairName);
         	if(currencyPair == null)
         	{
+        		data.count = 1;
         		$scope.currencyPairs.push(data);
         	}
         	else
         	{
         		currencyPair.transactionVolume += data.transactionVolume;
+        		currencyPair.count += 1;
         	}
             $scope.$apply();
         };
