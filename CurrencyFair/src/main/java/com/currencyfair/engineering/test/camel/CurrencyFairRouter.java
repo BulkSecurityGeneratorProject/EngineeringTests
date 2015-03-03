@@ -24,7 +24,7 @@ public class CurrencyFairRouter extends RouteBuilder
 	.unmarshal()
 	.json(JsonLibrary.Jackson , TradeDTO.class)
 	.multicast()
-	.to("persistantTradeProcessor","analyseTradeProcessor")	
+	.to("persistantTradeProcessor","analyseTradeProcessor","realTimeTradeProcessor")	
 	;
 	
 	

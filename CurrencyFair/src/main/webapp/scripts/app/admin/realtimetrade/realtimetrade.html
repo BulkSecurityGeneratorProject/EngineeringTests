@@ -1,0 +1,34 @@
+<div>
+    <h2>Real-time Trades</h2>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Currency From</th>
+                    <th>Currency To</th>
+                    <th>Amount Sell</th>
+                    <th>Amount Buy</th>
+                    <th>Rate</th>
+                    <th>Time Placed</th>
+                    <th>Originating Country</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="trade in trades">
+                    <td>{{trade.userId}}</td>
+                    <td>{{trade.currencyFrom}}</td>  
+                    <td>{{trade.currencyTo}}</td>
+                    <td>{{trade.amountSell}}</td>
+                    <td>{{trade.amountBuy}}</td>
+                    <td>{{trade.rate}}</td>
+                    <td>{{trade.timePlaced}}</td>
+                    <td>{{trade.originatingCountry}}</td>                      
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

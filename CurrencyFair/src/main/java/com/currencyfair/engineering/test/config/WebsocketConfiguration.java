@@ -58,6 +58,8 @@ public class WebsocketConfiguration extends AbstractWebSocketMessageBrokerConfig
         registry.addEndpoint("/websocket/tracker").withSockJS();
         
         registry.addEndpoint("/websocket/currencypair").withSockJS();
+        
+        registry.addEndpoint("/websocket/realtimetrade").withSockJS();
     }
 
     @Bean

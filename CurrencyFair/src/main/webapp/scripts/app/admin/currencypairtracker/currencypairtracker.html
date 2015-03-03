@@ -1,5 +1,4 @@
 <div>
-
     <h2>Real-time Currency Pair</h2>
 
     <div class="table-responsive">
@@ -12,9 +11,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="activity in currencyPairs">
-                    <td>{{activity.pairName}}</td>
-                    <td>{{activity.transactionVolume}}</td>               
+                <tr ng-repeat="currencyPair in currencyPairs">
+                    <td>{{currencyPair.pairName}}</td>
+                    <td>{{currencyPair.transactionVolume}}</td>               
                 </tr>
             </tbody>
         </table>
