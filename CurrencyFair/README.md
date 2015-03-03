@@ -31,5 +31,6 @@ The api's has been documented with Swagger. To access this page, login in the we
 # Known Issues
 ###errorHandler in multicasting with Camel has issue. Need to watch this.
 ###joda DateTime needs to fix for timePlaced in TradeDTO. implemented with String.
+###currencyFrom, currencyTo and originatingCountry are simple String, maybe a lookup table for validation is better.
 
 
