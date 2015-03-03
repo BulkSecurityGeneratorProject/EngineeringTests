@@ -16,13 +16,13 @@ or deploy the war file in a tomcat server.
 {"userId": "134256", "currencyFrom": "EUR", "currencyTo": "GBP", "amountSell": 1000, "amountBuy": 747.10, "rate": 0.7471, "timePlaced" : "14-JAN-15 10:27:44", "originatingCountry" : "FR"}
 
 ## Message Processor
-Process messages received via the message consumption endpoint.
-The interface is com.currencyfair.engineering.test.camel.service.TradeProcessor
+Process messages received via the message consumption endpoint.<br>
+The interface is <b>com.currencyfair.engineering.test.camel.service.TradeProcessor</b>.
 
-Implementaions are under the package com.currencyfair.engineering.test.camel.service.impl.
-PersistantTradeProcessorImpl -> persists the Trade message in database.
-AnalyseTradeProcessorImpl -> sends a CurrencyPairDTO to front end via websocket. 
-RealTimeTradeProcessorImpl -> sends the Trade Message to front end via websocket.
+Implementaions are under the package com.currencyfair.engineering.test.camel.service.impl.<br>
+PersistantTradeProcessorImpl -> persists the Trade message in database.<br>
+AnalyseTradeProcessorImpl -> sends a CurrencyPairDTO to front end via websocket. <br>
+RealTimeTradeProcessorImpl -> sends the Trade Message to front end via websocket.<br>
 
 To add more processor, simple implement the TradeProcessor interface, and add the service name in com.currencyfair.engineering.test.camel.CurrencyFairRouter in appropriate position. (currrent line number 27).
 
@@ -33,7 +33,7 @@ Developed with AngularJS and HTML5.
 The web application is fully secured. The end point for Message Consumption is open for all to submit a post request. Assuming that, some real application will post data to the endpoint, VPN tunnel is an option to secure this end point.
 
 ## Documentation 
-The api's has been documented with Swagger. To access this page, login in the webapp with admin/admin and browse Administration->Api from the menu.
+The api's has been documented with Swagger. To access this page, login in the webapp with <b>admin/admin</b> and browse Administration->Api from the menu.
 
 # Known Issues
 ###errorHandler in multicasting with Camel has issue. Need to watch this.
