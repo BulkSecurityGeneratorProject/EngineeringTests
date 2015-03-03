@@ -28,3 +28,8 @@ The web application is fully secured. The end point for Message Consumption is o
 ## Documentation 
 The api's has been documented with Swagger. To access this page, login in the webapp with admin/admin and browse Administration->Api from the menu.
 
+### Known Issues
+#errorHandler in multicasting with Camel has issue. Need to watch this.
+#joda DateTime needs to fix for timePlaced in TradeDTO. implemented with String.
+
+
