@@ -5,7 +5,7 @@ To run the application in dev mode with embedded tomcat server, simply type <b>m
 To run the application in prod mode, <br>
 mvn -Pprod package<br>
 cd target/<br>
-java -jar jhipster-0.0.1-SNAPSHOT.war --spring.profiles.active=prod <br>
+<b>java -jar jhipster-0.0.1-SNAPSHOT.war --spring.profiles.active=prod</b> <br>
 or deploy the war file in a tomcat server. 
 
 # Feature List
